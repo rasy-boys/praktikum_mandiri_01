@@ -4,54 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelompok 9 - Profil Anggota</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="margin:0; padding:24px; font-family:Arial, Helvetica, sans-serif; background-color:#f1f5f9; color:#1f2937;">
+<body>
 
     <!-- ===== Header ===== -->
-    <header style="max-width:900px; box-sizing:border-box; margin:0 auto 14px; padding:32px 24px; text-align:center; background-color:#0f766e; color:#ffffff; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-        <h1 style="margin:0;">Kelompok 9</h1>
-        <p style="margin:6px 0 0;">Desain UI/UX &amp; Pemrograman Web</p>
+    <header class="site-header">
+        <h1>Kelompok 9</h1>
+        <p>Desain UI/UX &amp; Pemrograman Web</p>
     </header>
 
     <!-- ===== Daftar Anggota: 2 kolom per baris, anggota terakhir di tengah ===== -->
     <main>
-        <section aria-labelledby="judul-anggota" style="max-width:900px; margin:0 auto;">
-            <h2 id="judul-anggota" style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0);">Daftar Anggota</h2>
+        <section class="members" aria-labelledby="judul-anggota">
+            <h2 id="judul-anggota" class="visually-hidden">Daftar Anggota</h2>
 
-            <table cellspacing="14" cellpadding="0" style="width:calc(100% + 28px); margin:-14px; border-collapse:separate;">
+            <table class="members-table">
 
                 <!-- Baris 1: Anggota 1 & 2 -->
                 <tr>
-                    <td width="50%" valign="top" style="padding:24px; background-color:#ffffff; border:1px solid #d1d5db; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-                        <article>
-                            <h3 style="margin:0 0 12px;">Muhamad Rasya Fattah Ar Rizqy</h3>
-                            <div style="display:flex; gap:16px; align-items:flex-start;">
-                                <figure style="margin:0; flex-shrink:0;">
-                                    <img src="assets/img/rasya.png" alt="Foto Rasya" width="120" height="120" style="object-fit:cover; border:1px solid #d1d5db; border-radius:8px;">
+                    <td class="member-cell">
+                        <article class="member-card">
+                            <h3>Muhamad Rasya Fattah Ar Rizqy</h3>
+                            <div class="member-body">
+                                <figure class="member-photo">
+                                    <img src="assets/img/rasya.png" alt="Foto Rasya" width="120" height="120">
                                 </figure>
-                                <table cellpadding="4" style="font-size:14px;">
-                                    <tr><th scope="row" align="left" style="color:#475569;">NIM</th><td>: 0110226094</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Prodi</th><td>: Teknik Informatika</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">TTL</th><td>: Bogor</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Domisili</th><td>: Nonton Film</td></tr>
+                                <table class="member-info">
+                                    <tr><th scope="row">NIM</th><td>: 0110226094</td></tr>
+                                    <tr><th scope="row">Prodi</th><td>: Teknik Informatika</td></tr>
+                                    <tr><th scope="row">TTL</th><td>: Bogor</td></tr>
+                                    <tr><th scope="row">Domisili</th><td>: Nonton Film</td></tr>
                                 </table>
                             </div>
                         </article>
                     </td>
 
-                    <td width="50%" valign="top" style="padding:24px; background-color:#ffffff; border:1px solid #d1d5db; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-                        <article>
-                            <h3 style="margin:0 0 12px;">Muhamad Abdul Malik</h3>
-                            <div style="display:flex; gap:16px; align-items:flex-start;">
-                                <figure style="margin:0; flex-shrink:0;">
-                                    <img src="assets/img/male.jpg" alt="Foto Anggota 2" width="120" height="120" style="object-fit:cover; border:1px solid #d1d5db; border-radius:8px;">
+                    <td class="member-cell">
+                        <article class="member-card">
+                            <h3>Muhamad Abdul Malik</h3>
+                            <div class="member-body">
+                                <figure class="member-photo">
+                                    <img src="assets/img/male.jpg" alt="Foto Anggota 2" width="120" height="120">
                                 </figure>
-                                <table cellpadding="4" style="font-size:14px;">
-                                    <tr><th scope="row" align="left" style="color:#475569;">NIM</th><td>: 0110226175</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Prodi</th><td>: Teknik Informatika</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">TTL</th><td>: Depok, 05 April 2008 </td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Domisili</th><td>: Bogor, Cibinong </td></tr>
+                                <table class="member-info">
+                                    <tr><th scope="row">NIM</th><td>: 0110226175</td></tr>
+                                    <tr><th scope="row">Prodi</th><td>: Teknik Informatika</td></tr>
+                                    <tr><th scope="row">TTL</th><td>: Depok, 05 April 2008 </td></tr>
+                                    <tr><th scope="row">Domisili</th><td>: Bogor, Cibinong </td></tr>
                                 </table>
                             </div>
                         </article>
@@ -60,35 +61,35 @@
 
                 <!-- Baris 2: Anggota 3 & 4 -->
                 <tr>
-                    <td width="50%" valign="top" style="padding:24px; background-color:#ffffff; border:1px solid #d1d5db; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-                        <article>
-                            <h3 style="margin:0 0 12px;"> MUh Alfina Reza</h3>
-                            <div style="display:flex; gap:16px; align-items:flex-start;">
-                                <figure style="margin:0; flex-shrink:0;">
-                                    <img src="assets/img/profile.png" alt="Foto Anggota 3" width="120" height="120" style="object-fit:cover; border:1px solid #d1d5db; border-radius:8px;">
+                    <td class="member-cell">
+                        <article class="member-card">
+                            <h3> MUh Alfina Reza</h3>
+                            <div class="member-body">
+                                <figure class="member-photo">
+                                    <img src="assets/img/profile.png" alt="Foto Anggota 3" width="120" height="120">
                                 </figure>
-                                <table cellpadding="4" style="font-size:14px;">
-                                    <tr><th scope="row" align="left" style="color:#475569;">NIM</th><td>: 0110226170</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Prodi</th><td>: Teknik Informatika</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">TTL</th><td>: Depok, 04 Mei 2006</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Domisili</th><td>: Bogor, Cibinong</td></tr>
+                                <table class="member-info">
+                                    <tr><th scope="row">NIM</th><td>: 0110226170</td></tr>
+                                    <tr><th scope="row">Prodi</th><td>: Teknik Informatika</td></tr>
+                                    <tr><th scope="row">TTL</th><td>: Depok, 04 Mei 2006</td></tr>
+                                    <tr><th scope="row">Domisili</th><td>: Bogor, Cibinong</td></tr>
                                 </table>
                             </div>
                         </article>
                     </td>
 
-                    <td width="50%" valign="top" style="padding:24px; background-color:#ffffff; border:1px solid #d1d5db; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-                        <article>
-                            <h3 style="margin:0 0 12px;"> Muhammad Alghifary Malik </h3>
-                            <div style="display:flex; gap:16px; align-items:flex-start;">
-                                <figure style="margin:0; flex-shrink:0;">
-                                    <img src="assets/img/profile.png" alt="Foto Anggota 4" width="120" height="120" style="object-fit:cover; border:1px solid #d1d5db; border-radius:8px;">
+                    <td class="member-cell">
+                        <article class="member-card">
+                            <h3> Muhammad Alghifary Malik </h3>
+                            <div class="member-body">
+                                <figure class="member-photo">
+                                    <img src="assets/img/profile.png" alt="Foto Anggota 4" width="120" height="120">
                                 </figure>
-                                <table cellpadding="4" style="font-size:14px;">
-                                    <tr><th scope="row" align="left" style="color:#475569;">NIM</th><td>:  0110226047</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Prodi</th><td>: Teknik Informatika</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">TTL</th><td>:  jakarta, 24 Desember 2007</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Domisili</th><td>: Jakarta Selatan</td></tr>
+                                <table class="member-info">
+                                    <tr><th scope="row">NIM</th><td>:  0110226047</td></tr>
+                                    <tr><th scope="row">Prodi</th><td>: Teknik Informatika</td></tr>
+                                    <tr><th scope="row">TTL</th><td>:  jakarta, 24 Desember 2007</td></tr>
+                                    <tr><th scope="row">Domisili</th><td>: Jakarta Selatan</td></tr>
                                 </table>
                             </div>
                         </article>
@@ -97,18 +98,18 @@
 
                 <!-- Baris 3: Anggota 5 (sendirian, di tengah) -->
                 <tr>
-                    <td colspan="2" align="center" style="background-color:transparent;">
-                        <article style="width:calc(50% - 7px); min-width:280px; box-sizing:border-box; margin:0 auto; padding:24px; text-align:left; background-color:#ffffff; border:1px solid #d1d5db; border-radius:16px; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
-                            <h3 style="margin:0 0 12px;"> Muhammad Aliefi Zikri</h3>
-                            <div style="display:flex; gap:16px; align-items:flex-start;">
-                                <figure style="margin:0; flex-shrink:0;">
-                                    <img src="assets/img/zikri.jpeg" alt="Foto Anggota 5" width="120" height="120" style="object-fit:cover; border:1px solid #d1d5db; border-radius:8px;">
+                    <td class="member-cell-center" colspan="2">
+                        <article class="member-card member-card-center">
+                            <h3> Muhammad Aliefi Zikri</h3>
+                            <div class="member-body">
+                                <figure class="member-photo">
+                                    <img src="assets/img/zikri.jpeg" alt="Foto Anggota 5" width="120" height="120">
                                 </figure>
-                                <table cellpadding="4" style="font-size:14px;">
-                                    <tr><th scope="row" align="left" style="color:#475569;">NIM</th><td>: 0110226150</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Prodi</th><td>: Teknik Informatika</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">TTL</th><td>: Jakarta, 11 Maret 2008</td></tr>
-                                    <tr><th scope="row" align="left" style="color:#475569;">Domisili</th><td>: Depok</td></tr>
+                                <table class="member-info">
+                                    <tr><th scope="row">NIM</th><td>: 0110226150</td></tr>
+                                    <tr><th scope="row">Prodi</th><td>: Teknik Informatika</td></tr>
+                                    <tr><th scope="row">TTL</th><td>: Jakarta, 11 Maret 2008</td></tr>
+                                    <tr><th scope="row">Domisili</th><td>: Depok</td></tr>
                                 </table>
                             </div>
                         </article>
@@ -120,8 +121,8 @@
     </main>
 
     <!-- ===== Footer ===== -->
-    <footer style="max-width:900px; margin:24px auto 0; padding-top:16px; text-align:center; font-size:13px; color:#64748b; border-top:1px solid #cbd5e1;">
-        <p style="margin:0;">Copyright &copy; 2026 Kelompok 9 - Praktikum Desain UI/UX Pem Web</p>
+    <footer class="site-footer">
+        <p>Copyright &copy; 2026 Kelompok 9 - Praktikum Desain UI/UX Pem Web</p>
     </footer>
 
 </body>

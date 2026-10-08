@@ -1,0 +1,140 @@
+/* ===== Base ===== */
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1f2937;
+}
+
+/* ===== Header ===== */
+.site-header {
+    max-width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto 14px;
+    padding: 32px 24px;
+    text-align: center;
+    background-color: #0f766e;
+    color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.site-header p {
+    margin: 6px 0 0;
+}
+
+/* ===== Daftar Anggota ===== */
+.members {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Judul tersembunyi (hanya untuk screen reader) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Tabel layout: 2 kolom per baris */
+.members-table {
+    width: calc(100% + 28px);
+    margin: -14px;
+    border-collapse: separate;
+    border-spacing: 14px;
+    padding: 0;
+}
+
+.members-table > tbody > tr > td,
+.members-table > tr > td {
+    padding: 0;
+}
+
+.member-cell {
+    width: 50%;
+    vertical-align: top;
+    padding: 24px !important;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Baris terakhir: anggota sendirian di tengah */
+.member-cell-center {
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* ===== Kartu Anggota ===== */
+.member-card h3 {
+    margin: 0 0 12px;
+}
+
+.member-card-center {
+    width: calc(50% - 7px);
+    min-width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.member-body {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.member-photo {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.member-photo img {
+    object-fit: cover;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+}
+
+/* ===== Tabel Biodata ===== */
+.member-info {
+    font-size: 14px;
+}
+
+.member-info th,
+.member-info td {
+    padding: 4px;
+}
+
+.member-info th {
+    text-align: left;
+    color: #475569;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    max-width: 900px;
+    margin: 24px auto 0;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    border-top: 1px solid #cbd5e1;
+}
+
+.site-footer p {
+    margin: 0;
+}
